@@ -5,7 +5,6 @@ import CardHome from '../home/CardHome'
 import CategoryFilter from '../home/CategoryFilter'
 import InputSearch from '../home/InputSearch'
 import PriceFilter from '../home/PriceFilter'
-import '../home/style/home.css'
 
 const Home = () => {
 	const [inputSearch, setInputSearch] = useState('')

@@ -5,11 +5,11 @@ import Home from './components/pages/Home'
 import Login from './components/pages/Login'
 import Purchases from './components/pages/Purchases'
 import ProductDetail from './components/pages/ProductDetail'
-import Header from './components/shared/Header'
 
 import Cart from './components/shared/Cart'
 import ProtectedRoutes from './components/routes/ProtectedRoutes'
 import FormUser from './components/users/FormUser'
+import Sidebar from './components/shared/Sidebar'
 
 function App() {
 	// COMENTAMOS PORQUE SOLO SE NECESITA PARA CREAR UN USARIO NUEVO
@@ -31,8 +31,8 @@ function App() {
 	// }, [])
 
 	return (
-		<div className='App'>
-			<Header />
+		<div className='App bg-[#262837] w-full min-h-screen'>
+			<Sidebar />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/login' element={<Login />} />
